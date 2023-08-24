@@ -10,13 +10,9 @@ Knowledge Discovery Database (KDD) methodology was used as the foundation for th
 • Data Splitting: To evaluate the RNN model performance, data splitting must be performed. The dataset is then randomly divided into two sets, Training and Testing, into 80% (0.8) and 20% (0.2) ratios.
 Some important points to take note are as follows:
 • The architecture associated with the RNN model is implemented using the Sequential() class from a library called Keras.
-• The model comprises an LSTM (”Long Short-Term
-Memory”) layer, an RNN layer capable of capturing
-temporal dependencies in sequential data.
-• The model is trained through the training data and eval-
-uated with the help of appropriate evaluation metrics.
-• Visualization techniques are used to visually analyse the historical trends, predicted values, and any discrepancies
-between the predicted and actual closing prices.
+• The model comprises an LSTM (”Long Short-Term Memory”) layer, an RNN layer capable of capturing temporal dependencies in sequential data.
+• The model is trained through the training data and evaluated with the help of appropriate evaluation metrics.
+• Visualization techniques are used to visually analyse the historical trends, predicted values, and any discrepancies between the predicted and actual closing prices.
 3. The LSTM (RNN) Modelling: This section discusses the deep learning model used in this project. RNNs, or Recurrent Neural Networks, mainly the LSTM model, have been utilised, and they are highly suitable for stock price forecasting due to their ability to capture temporal dependencies and learn patterns from sequential data. They offer several advantages for this problem:
 • Sequential Data Handling: RNNs excel at processing and analysing sequential data, making them well-suited for stock price data in which the order of data points is essential. They maintain an internal memory that allows them to retain information from previous inputs, enabling them to capture the temporal dependencies in stock price data.
 • Long-Term Dependency Capture: The stock market exhibits long-term trends and patterns, and RNNs, especially those with LSTM layers, are designed to capture and learn these dependencies. LSTM layers have gating mechanisms determining which information to remember or forget, enabling them to handle long sequences and capture relevant patterns over extended periods.
